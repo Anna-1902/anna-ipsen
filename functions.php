@@ -20,7 +20,7 @@ function theme_features() {
     add_post_type_support( 'page', 'excerpt' );
     add_theme_support( 'custom-logo' );
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
-    register_nav_menu('footerMenuLocation', 'Footer Menu Location');
+    register_nav_menu('undernavigation', 'Undernavigation');
 
 }
 add_action('after_setup_theme', 'theme_features');
