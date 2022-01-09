@@ -1,0 +1,510 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 2vh;
+  color: #161E29;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 23px;
+  border-bottom: #F5CF85 solid 3px;
+  padding-bottom: 2vh;
+  text-transform: uppercase;
+  color: #161E29 !important;
+}
+
+h3, a, .wpcf7-submit {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px !important;
+  color: #161E29;
+  text-decoration: none;
+}
+
+p, td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #161E29;
+}
+
+/* basic */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9CAFA2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: baseline;
+
+  background-color: #9CAFA2;
+  width: 100%;
+  height: fit-content;
+  padding: 4vh 10vw 1vh 10vw;
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.custom-logo {
+  height: auto;
+  width: 8rem;
+}
+
+
+.wp-block-button, .wpcf7-submit {
+  padding: .5rem 2rem;
+  height: fit-content;
+  width: fit-content;
+
+  background: #F5CF85;
+  border: none;
+  border-radius: 30px;
+
+  text-transform: uppercase;
+}
+
+.wp-block-button:hover, .wpcf7-submit:hover {
+  letter-spacing: 0.125rem;
+}
+
+#project_button a {
+  padding: 2vh 3vw;
+  height: fit-content;
+  width: fit-content;
+
+  background: #F5CF85;
+  border: none;
+  border-radius: 30px;
+
+  text-transform: uppercase;
+}
+
+
+button {
+  padding: .5vh 2vw;
+  height: fit-content;
+  width: fit-content;
+
+  background: #F5CF85;
+  border: none;
+  border-radius: 30px;
+
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  height: fit-content;
+  width: 100%;
+  padding: 6vh 10vw 6vh 10vw;
+
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  height: fit-content;
+  width: 100%;
+  padding: 6vh 10vw 6vh 10vw;
+}
+
+
+#helloThere {
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#helloThere :nth-child(2) {
+  margin: 4vh 0;
+}
+
+#animation {
+  width: 45vw;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding: 3vh 10vw;
+  border-top: #F5CF85 solid 3px;
+}
+
+/* Profil */
+.articleImg {
+  width: 30%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.articleImgKontakt {
+  width: 45%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.imgProfil {
+  width: 100%;
+  height: auto;
+}
+
+.articleProfil, .articleKontakt, .articleCvStor {
+  width: 50%;
+  margin-bottom: 6vh;
+}
+
+
+.articleCvLille {
+  width: 40%;
+}
+
+.articleProfil p {
+  width: 98%;
+}
+
+.articleButton {
+  margin-top: 2vh !important;
+}
+
+/* cv */
+
+.cvTable {
+  width: 100%;
+  background-color: none;
+  border: none;
+  margin-bottom: 3vh;
+}
+
+.cvTable tr :nth-child(2) {
+  text-align: end;
+}
+
+.cvTable tr :first-child {
+  width: 80%;
+}
+
+.cvTable tr td {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+
+/* kontakt formular */
+
+.articleKontakt form input[type="text"], .articleKontakt form input[type="email"], .articleKontakt form textarea {
+  width: 80%;
+  height: auto;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  padding: 2.5vh 2vw;
+  height: fit-content;
+  width: fit-content;
+
+  border: 2px solid #F5CF85;
+  background-color: #FDFAF2;
+  border-radius: 30px;
+}
+
+.wpcf7-submit.wpcf7-form-control {
+  width: fit-content;
+}
+
+/* projekter */
+.project_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: fit-content;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  background-color: none;
+  border: 2px solid #F5CF85;
+  border-radius: 30px;
+}
+
+
+.project_div img, .project_div p, .project_div h2 {
+  width: 30rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+#project_button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+#project_button a:first-child {
+  margin-right: 1.5rem;
+}
+
+
+
+
+/* fritidsprojekter */
+.fritid_projekt div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.fritid_projekt div img {
+  width: auto;
+  height: 16rem;
+
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+
+/* header */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+  margin-left: 4vw;
+  height: auto;
+}
+
+.menu-item a {
+  text-decoration: none;
+  margin: 0 0 0 1rem;
+  border-bottom: 2px solid transparent;
+  color: #000B13;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.current-menu-item a {
+  border-bottom: solid #F5CF85 2px;
+  padding-bottom: 2px;
+}
+
+.menu-item a:hover {
+  border-bottom: solid #F5CF85 2px;
+  padding-bottom: 2px;
+
+}
+
+/* navbar regular css */
+
+
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-navbar ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.site-navbar ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+
+/* nav-toggler css !hjælp fra scott */
+
+.nav-toggler {
+  border: 0px solid #000B13;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #000B13;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-toggler span:before {
+  content: "";
+  transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+  content: "";
+  transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+
+/* mobile breakpoint start */
+
+@media screen and (max-width: 767px) {
+  
+  .container {
+    max-width: 100%;
+  }
+
+  /* navbar css for mobile start */
+
+  .nav-toggler {
+    display: block;
+  }
+
+  .site-navbar {
+    min-height: 60px;
+  }
+
+  .menu-item {
+    margin: 0;
+  }
+
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 3.75rem);
+    left: 0;
+    top: 3.75rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #9CAFA2;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .site-navbar ul li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .site-navbar ul li a {
+    padding: .5rem;
+    margin-bottom: 2rem;
+  }
+
+  .site-navbar ul.open {
+    max-height: 100vh;
+    padding: 1em;
+    overflow: visible;
+  }
+
+  .custom-logo {
+    height: auto;
+    width: 5rem;
+  }
+
+  
+  #helloThere {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #helloThere :nth-child(2) {
+    margin: 1rem 0;
+  }
+  
+  #animation {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fritid_projekt div img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  .articleCvStor, .articleCvLille {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .articleImg, .articleProfil, .articleKontakt {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .project_div img, .project_div p, .project_div h2 {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  #project_button a:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .articleImgKontakt, .articleKontakt form input[type="text"], .articleKontakt form input[type="email"], .articleKontakt form textarea {
+    width: 100%;
+  }
