@@ -161,6 +161,29 @@ footer {
   border-top: #F5CF85 solid 3px;
 }
 
+/* undernavigation */
+
+.custom-menu-class {
+  margin: 3rem 0 3rem 0;
+  width: 100%;
+  background-color: #F5CF85;
+  border-radius: 30px;
+  /* border-bottom: #F5CF85 solid 3px; */
+}
+
+.custom-menu-class li {
+  list-style: none;
+  margin: 1rem 2rem;
+  padding: 0;
+}
+#menu-portfoliomenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
 /* Profil */
 .articleImg {
   width: 30%;

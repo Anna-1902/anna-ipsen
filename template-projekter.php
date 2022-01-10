@@ -8,8 +8,12 @@ Template Name: Projekter
 
  <main class="flex">
      <h1>Portfolio</h1>
-     <h2><?php echo get_the_title(); ?></h2>
-
+     <?php
+        wp_nav_menu(array(
+            'theme_location'    => 'undernavigation',
+            'container_class' => 'custom-menu-class'
+        ));
+        ?>
  <?php
 $loop = new WP_Query( array(
     'post_type' => 'projekter',
