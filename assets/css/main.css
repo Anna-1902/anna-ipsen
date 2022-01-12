@@ -84,7 +84,7 @@ header {
 
 .wp-block-button:hover, .wpcf7-submit:hover, #project_button a:hover{
   transition: all .5s ease-in-out;
-  box-shadow: 0px 10px 0px -5px #e9d7b5;
+  box-shadow: 0px 10px 0px -5px #FDFAF2;
   
 }
 
@@ -169,7 +169,6 @@ footer {
   width: 100%;
   background-color: #F5CF85;
   border-radius: 30px;
-  /* border-bottom: #F5CF85 solid 3px; */
 }
 
 .custom-menu-class li {
@@ -189,6 +188,11 @@ footer {
   border-bottom: solid #FDFAF2 2px;
   padding-bottom: 2px;
 
+}
+
+#menu-portfoliomenu .current-menu-item a {
+  border-bottom: solid #FDFAF2 2px;
+  padding-bottom: 2px;
 }
 
 /* Profil */
@@ -274,7 +278,7 @@ footer {
 .project_div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   width: fit-content;
   padding: 2rem;
@@ -292,6 +296,7 @@ footer {
   height: auto;
   margin-bottom: 1.5rem;
 }
+
 
 #project_button {
   display: flex;

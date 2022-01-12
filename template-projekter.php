@@ -26,13 +26,15 @@ $loop = new WP_Query( array(
 
   
 <div class="project_div" >
-         <img src="<?php the_field('project_picture'); ?>" alt="" class="">
-         <h2><?php the_field('project_title'); ?></h2>
-         <?php the_field('project_description'); ?>
-         <div id="project_button">
-             <a href="<?php the_field('live_button'); ?>" target="_blank">Se live</a>
-             <a href="<?php the_field('github_button'); ?>" target="_blank">Se kode på Github</a>
-         </div>
+    <h2><?php the_field('project_title'); ?></h2>
+    <?php the_field('project_description'); ?>
+    <section>
+        <img src="<?php the_field('project_picture'); ?>" alt="" class="">
+        <div id="project_button">
+            <a href="<?php the_field('live_button'); ?>" target="_blank">Se live</a>
+            <a href="<?php the_field('github_button'); ?>" target="_blank">Se kode på Github</a>
+        </div>
+    </section>
 
      </div>
 

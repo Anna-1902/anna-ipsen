@@ -29,7 +29,7 @@ add_action('after_setup_theme', 'theme_features');
 add_theme_support( 'post-thumbnails' );
 
 // WP_LIST_PAGES ADD CLASSES
-add_filter('wp_list_pages', create_function('$t', 'return str_replace("<a ", "<a class=\"list-group-item list-group-item-action\" ", $t);'));
+// add_filter('wp_list_pages', create_function('$t', 'return str_replace("<a ", "<a class=\"list-group-item list-group-item-action\" ", $t);'));
 // ADD CLASS TO HTML TABLES
 add_filter( 'the_content', 'tableClass' );
 function tableClass( $content ) {
