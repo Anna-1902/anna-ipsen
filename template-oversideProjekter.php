@@ -6,7 +6,7 @@ Template Name: Projekter Overside
 
 <?php get_header(); ?>
 
-<main class="flex">
+<main class="flex_column">
     <h1>Portfolio</h1>
 
     <?php
