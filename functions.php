@@ -45,50 +45,6 @@ function atg_menu_classes($classes, $item, $args) {
   add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
 
 
-  function headless_wp_organisation_init() {
-    $labels = array(
-        'name'               => _x( 'Organisation', 'post type general name', 'headless-wp' ),
-        'singular_name'      => _x( 'Organisation', 'post type singular name', 'headless-wp' ),
-        'menu_name'          => _x( 'Organisation', 'admin menu', 'headless-wp' ),
-        'name_admin_bar'     => _x( 'Organisation', 'add new on admin bar', 'headless-wp' ),
-        'add_new'            => _x( 'Add New', 'organisation', 'headless-wp' ),
-        'add_new_item'       => __( 'Add New Item', 'headless-wp' ),
-        'new_item'           => __( 'New item to organisation', 'headless-wp' ),
-        'edit_item'          => __( 'Edit item', 'headless-wp' ),
-        'view_item'          => __( 'View item', 'headless-wp' ),
-        'all_items'          => __( 'All items', 'headless-wp' ),
-        'search_items'       => __( 'Search items', 'headless-wp' ),
-        'parent_item_colon'  => __( 'Parent Items:', 'headless-wp' ),
-        'not_found'          => __( 'No items found.', 'headless-wp' ),
-        'not_found_in_trash' => __( 'No items found in Trash.', 'headless-wp' )
-    );
-
-    $args = array(
-        'labels'             => $labels,
-        'description'        => __( 'Description.', 'headless-wp' ),
-        'public'             => true,
-        'publicly_queryable' => true,
-        'show_ui'            => true,
-        'show_in_menu'       => true,
-        'show_in_rest'       => true,
-        'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'organisation' ),
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => false,
-        'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
-        'menu_icon'          => 'dashicons-megaphone',
-        'taxonomies'         => array( 'category', 'post_tag' )
-    );
-
-    register_post_type( 'organisation', $args );
-}
-
-add_action( 'init', 'headless_wp_organisation_init' );
-
-
-
 ?>
 
 
